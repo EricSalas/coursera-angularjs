@@ -15,9 +15,6 @@ return country;
 
 });**/
 
-
-
-
 angular.module('calculatorApp',[])
 
 .controller('calculatorController',function($scope){
