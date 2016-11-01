@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html ng-app="diApp">
+<head>
+	<title>Dependency Injection JS</title>
+	<script type="text/javascript" src="angular.min.js"></script>
+	<script type="text/javascript" src="di.js"></script>
+</head>
+<body>
+
+
+<!--
+<div ng-controller="diController">
+<h1>Dependency Injection JS</h1>
+<input type="text" ng-model="name" ng-blur="upper();">
+
+</div>-->
+
+<div ng-controller="expController">
+<h1>Expressions and Interpolation</h1>
+	
+<input type="text" ng-model="name">
+<br>
+Original: {{ sayMsg() }}<br>
+New: {{ sayByeMsg() }}<br>
+Free: {{ sayByeMsg() | free : 'Bye' : 'I am coming to China, to visit the ' }}<br>
+Truth: {{ sayByeMsg() | free : 'Bye' : 'I am coming to China, to visit the ' | uppercase }}
+
+<div>
+	
+
+<button ng-click="nextDestination();">Next destination</button>
+
+Travel cost: {{travelCost | currency : "Erics" : 4}}
+
+<br>
+
+<img   height="250" width="600" ng-src="{{foto}}">
+
+
+
+</div>
+
+
+</div>
+
+</br>
+
+</body>
+</html>
