@@ -23,7 +23,13 @@
 		
 <li ng-repeat="item in list2">{{$index + 1}} Eric you are visiting {{item.country}} in {{item.when}}</li>
 
-	</ul>
+	</ul><br>
+
+
+	<h3>Add countries:</h3>
+	<input type="text" placeholder="name" ng-model="country">
+	<input type="text" placeholder="month" ng-model="when">
+	<button ng-click="addCountry();">Add!</button>
 
 
 </div>

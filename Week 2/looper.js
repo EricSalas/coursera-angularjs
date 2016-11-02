@@ -41,7 +41,17 @@ function LooperController($scope){
 	$scope.list2 = list2;
 
 
+$scope.addCountry = function(){
 
+var newCountry = {
+country: $scope.country,
+when: $scope.when
+
+};
+
+$scope.list2.push(newCountry);
+
+}
 
 }
 
