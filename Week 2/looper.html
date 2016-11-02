@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html ng-app="looperApp">
+<head>
+	<title>Digest Cycle</title>
+</head>
+<body>
+<h1>Digest Cycle</h1>
+<div ng-controller="LooperController">
+	
+
+	<h3>List of countries:</h3>
+
+	<ul>
+		
+<li ng-repeat="item in list1"> {{item}}</li>
+
+	</ul><br>
+
+
+	<h3>Next visits:</h3>
+
+	<ul>
+		
+<li ng-repeat="item in list2">{{$index + 1}} Eric you are visiting {{item.country}} in {{item.when}}</li>
+
+	</ul>
+
+
+</div>
+
+<script type="text/javascript" src="angular.min.js"></script>
+<script type="text/javascript" src="looper.js"></script>
+</body>
+</html>
