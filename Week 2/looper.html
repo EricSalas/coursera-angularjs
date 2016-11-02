@@ -19,9 +19,12 @@
 
 	<h3>Next visits:</h3>
 
+
+<input type="text" ng-model="search">
+
 	<ul>
 		
-<li ng-repeat="item in list2">{{$index + 1}} Eric you are visiting {{item.country}} in {{item.when}}</li>
+<li ng-repeat="item in list2 | filter : search">{{$index + 1}} Eric you are visiting {{item.country}} in {{item.when}}</li>
 
 	</ul><br>
 
