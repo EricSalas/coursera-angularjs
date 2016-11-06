@@ -2,7 +2,7 @@
 
 'use strict'; 
 
-angular.module('serviceApp',[])
+angular.module('serviceAppss',[])
 .controller("ShoppingListAddController",ShoppingListAddController)
 .controller("ShoppingListShowController",ShoppingListShowController)
 .service("ShoppingListService",ShoppingListService);
