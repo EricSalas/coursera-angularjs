@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+	<title>HTTP example</title>
+</head>
+<body>
+<h1>HTTP Examples</h1>
+<div ng-controller="controlador as ctrl">
+
+<h2>List of menu items</h2>
+<ul>
+	
+<li ng-repeat="item in ctrl.categories">
+<a href="" ng-click="ctrl.getList(item.short_name);">	({{item.short_name}}) </a> {{item.name}}
+
+</li>
+
+</ul>
+	
+
+</div>
+<script type="text/javascript" src="angular.min.js"></script>
+<script type="text/javascript" src="http.js"></script>
+</body>
+</html>

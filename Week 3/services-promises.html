@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ng-app="serviceApp">
+<head>
+	<title>Services with promises - Shopping List App</title>
+</head>
+<body>
+
+<div ng-controller="ShoppingListAddController as itemAdder">
+	<input type="text" placeholder="item name" ng-model="itemAdder.itemName">
+	<input type="text" placeholder="item quantity" ng-model="itemAdder.itemQuantity"> boxes
+
+	<button ng-click="itemAdder.addItem();">Add item to shopping list!</button>
+
+</div>
+
+<div ng-controller="ShoppingListShowController as showList">
+	<ol>
+		<li ng-repeat="item in showList.items">
+			{{ item.quantity }} boxes of {{ item.name }}
+			<button ng-click="showList.removeItem($index);">Remove item!</button>
+		</li>
+
+	</ol>
+
+
+</div>
+<script type="text/javascript" src="angular.min.js"></script>
+<script type="text/javascript" src="services-promises.js"></script>
+
+</body>
+</html>
